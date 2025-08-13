@@ -4,6 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+
+  <body
+    class="bg-gradient-to-br from-slate-800 via-slate-900 to-black h-screen flex items-center justify-center"
+  >
+    <div
+      class="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-6 w-80 border border-white/20"
+    >
+      <h1 class="text-white text-center text-2xl font-bold mb-4">
+        🧮 UniqueCalc
+      </h1>
+
+      <!-- Display -->
+      <input
+        type="text"
+        id="display"
+        readonly
+        class="w-full p-4 text-right text-2xl bg-black/30 text-white rounded-xl mb-4 border border-white/20"
+      />
+
+      <!-- Buttons -->
+      <div class="grid grid-cols-4 gap-3">
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          7
+        </button>
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          8
+        </button>
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          9
+        </button>
+        <button
+          class="btn-op bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors text-pink-400"
+        >
+          /
+        </button>
+
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          4
+        </button>
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          5
+        </button>
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          6
+        </button>
+        <button
+          class="btn-op bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors text-yellow-400"
+        >
+          *
+        </button>
+
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          1
+        </button>
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          2
+        </button>
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          3
+        </button>
+        <button
+          class="btn-op bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors text-green-400"
+        >
+          -
+        </button>
+
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          0
+        </button>
+        <button
+          class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
+        >
+          .
+        </button>
+        <button
+          id="clear"
+          class="btn-op bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors text-red-400"
+        >
+          C
+        </button>
+        <button
+          class="btn-op bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors text-blue-400"
+        >
+          +
+        </button>
+
+        <button
+          id="equals"
+          class="col-span-4 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl py-3 font-bold hover:scale-105 transition-transform"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+  </body>
 </html>
