@@ -27,7 +27,7 @@
 
       <!-- Buttons -->
       <div class="grid grid-cols-4 gap-3">
-        <button
+        <button onclick="appendValue('7')"
           class="btn bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors"
         >
           7
@@ -101,8 +101,8 @@
           .
         </button>
         <button
-          id="clear"
-          class="btn-op bg-white/10 text-white py-3 rounded-xl font-semibold hover:bg-white/20 transition-colors text-red-400"
+          onclick="clearDisplay()"
+          class="btn-op bg-red-800 text-white py-3 rounded-xl font-semibold"
         >
           C
         </button>
